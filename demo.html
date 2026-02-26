@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Java Script</h1>
+    <script>
+        //document.write("Hello World");
+
+        //Variable Declaration
+        var myName = "ABES";            //global,attached to window object, can be re-declared and updated
+        document.write(myName);
+        console.log(myName);
+
+        //JS execution (global and local(block) scope )
+        function hello(){
+            var myName = "46454645";      //local, cannot be accessed outside the function, can be re-declared and updated
+            console.log(myName);
+        }
+        hello();
+
+        //from ES6 let and const
+        let msg = "Welcome to ABES";     //block scope, cannot be accessed outside the block, cannot be re-declared but can be updated
+        console.log(msg);
+        
+        const msg2 = "Thanks";
+        console.log(msg2);         
+    </script>
+    
+</body>
+</html>
