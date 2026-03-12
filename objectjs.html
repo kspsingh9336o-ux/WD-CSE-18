@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <script>
+let myInfo={
+    name:"kapil patel",
+    age:16,
+    isMarried:false,
+    address:{
+        streetNo:5,
+        area:"indrapuram",
+        city:"Noida",
+        state:"Up",
+        country:"India",
+    },
+    course:"B.tech",
+    branch:"Cse",
+    year:2026,
+    education:function(){
+        console.log("my education is " + myInfo.course + myInfo.branch +"and " + myInfo.year)
+
+    },
+};
+myInfo.education();
+//console.log(myInfo.education);
+console.log(myInfo.address.city);//access using dot notation
+console.log(myInfo["name"]);///access bracket notaion
+ 
+// find object length
+let keys=Object.keys(myInfo);
+console.log(keys.length);
+
+// delete object property
+console.log(delete myInfo.name);
+console.log(myInfo);
+
+// print object's property using for loop
+
+for(let i=0;i<keys.length;i++){
+    console.log("objects keys are " + myInfo[keys[i]]);
+}
+// print object's property using for in loop
+for(let x in myInfo){
+    console.log(myInfo[x]);
+}
+
+  </script>  
+</body>
+</html>
