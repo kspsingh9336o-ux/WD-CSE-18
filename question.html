@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum, Diff. and Product</title>
+</head>
+<body>
+    <h1>Calculate Sum, Difference and Product</h1>
+
+    <label>
+        Number 1:
+        <input id="num1" type="number" value="0">
+    </label>
+    <br>
+    <label>
+        Number 2:
+        <input id="num2" type="number" value="0">
+    </label>
+    <br><br>
+
+    <button id="calculateBtn">Calculate</button>
+
+    <h2>Results</h2>
+    <div id="results">
+        <p id="sum">Sum: </p>
+        <p id="diff">Difference: </p>
+        <p id="product">Product: </p>
+    </div>
+
+    <script>
+        const num1Input = document.getElementById('num1');
+        const num2Input = document.getElementById('num2');
+        const calculateBtn = document.getElementById('calculateBtn');
+        const sumOutput = document.getElementById('sum');
+        const diffOutput = document.getElementById('diff');
+        const productOutput = document.getElementById('product');
+
+        calculateBtn.addEventListener('click', () => {
+            const a = Number(num1Input.value);
+            const b = Number(num2Input.value);
+
+            sumOutput.innerHTML = 'Sum: ' + (a + b);
+            diffOutput.innerHTML = 'Difference: ' + (a - b);
+            productOutput.innerHTML = 'Product: ' + (a * b);
+        });
+    </script>
+</body>
+</html>
+
