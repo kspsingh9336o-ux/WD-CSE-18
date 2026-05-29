@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function js </title>
+</head>
+<body>
+    <script>
+        //funtion
+       // normal funtion decleration
+       function demo(){
+        console.log("Hello kapil");
+       }
+       demo();//funtion call
+       //with pairameter
+    //    function call(a,b){
+    //     var x=a;
+    //     var y=b;
+    //     console.log("addition of a and b: "+(x+y))
+    //    }
+    //    call(3,4)
+       //funtion with defalt vailu
+    //    var num1=a;
+    //    var num2=b;
+    //    function add(a,b=5){
+    //     var num1=a;
+    //    var num2=b;
+    //     var res1=num1+num2;
+    //     console.log("addition of a and b: "+ res1);
+    //    }
+    //    function multiply(a,b){
+    //     var n1=a;
+    //    var n2=b;
+    //     var res2=n1*n2;
+    //     console.log("multiplication of a and b: "+ res2);
+    //    }
+    //    function div(a,b){
+    //     var num1=a;
+    //    var num2=b;
+    //     var res3=num1/num2;
+    //     console.log("divition of a and b: "+ res3);
+    //    }
+    //    add(4,8);
+    //    multiply(4,2);
+    //    div(9,4);
+//anononemas function
+// let demo1=function(){
+//     console.log("hello abhishek ");
+
+// }
+// demo1();
+// //arrow funtion
+// let demo2=()=>{
+//     console.log("hello anjali");
+// }
+// demo2();
+// //single line function 
+// let demo3=()=>console.log("hello abes ec");
+// demo3();
+// //iifi function
+// (function(){
+// console.log("ram is going to home");
+// })();
+// //callback in synchronus
+function addR(callback){
+    var h=44;
+    var m=88;
+    var e=77;
+    var c=98;
+    var res=h+m+e+c;
+    var per=res/4;
+    callback(res)
+    callback(per)
+}
+function result(res,per){
+    console.log("your tolat marks: "+ res );
+    console.log("percentage:" + per);
+
+}
+addR(result);
+//
+function hello(){
+    console.log("iife in js:",30000)
+}
+hello();
+ 
+//call back function
+//home work
+    </script>
+    
+</body>
+</html>
