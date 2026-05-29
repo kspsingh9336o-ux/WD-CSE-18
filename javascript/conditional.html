@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condition statement in js</title>
+</head>
+<body>
+    <script>
+  //conditional statement
+  //if-else condition
+  let age=19;
+  if(age>=18){
+    console.log("elegible for vote");
+  }
+  else{
+    console.log("not elegible for vote");
+  }
+  //switch case
+  let aa=5;
+  let bb=7;
+  let op='+';
+  switch(op){
+    case'+':
+    console.log("sum:",aa+bb);
+    break;
+    case'-':
+    console.log("sub:",aa-bb);
+    break;
+    case'*':
+    aaconsole.log("multiply:",aa*bb);
+    break;
+    case'/':
+    console.log("div:",aa/bb);
+    break;
+    default:
+        console.log("invailid operator");
+  }
+  //if-else-if
+  let mark=44;
+  if(mark>=60&&mark<=100){
+    console.log("First Division");
+  }
+  else if(mark<60&&mark>=40){
+    console.log("Second Division");
+  }
+  else if(mark<40&&mark>=33){
+    console.log("Third Division");
+  }
+  else{
+    console.log("Fail");
+  }
+  let sumMark=[70,80,88,90,78,86];
+  let sum=0;
+  for(let i=0;i<sumMark.length;i++){
+    sum = sum + sumMark[i];
+  }
+  let avg=sum/sumMark.length;
+  console.log("avg marks:",avg);
+  if(avg>=60&&avg<=100){
+    console.log("first division");
+  }
+  else if(avg<60&&avg>=40){
+    console.log("second division");
+  }
+  else if(avg <40&&avg>=33){
+    console.log("third division");
+  }
+  else{
+    console.log("fail");
+  }
+    </script>
+    
+</body>
+</html>
