@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //taking input from user on website
+        var name=prompt("enter your name: ");
+        console.log(name);
+
+        //for notifacation on website
+        alert("Hello!");//one time only
+        //arithematic operator
+        var a=15;
+        var b=8;
+        console.log("sum of a and b:",a+b);
+        console.log("multiplication:",a*b);
+        console.log("modulas:",a%b);
+        console.log("pri-incriment:",++a);
+        console.log("post-incriment:",b++);
+        console.log("pri-dicriment:",--a);
+        console.log("post-dicriment:",b--);
+        //assinment opretor
+        var a=15;
+        var b=8;
+        console.log("+=",b+=b);
+        console.log("/=",a/=a);
+        var x=5;
+        console.log("**",x**=4);
+        //comparison operator
+        var a=15;
+        var b="8";
+        console.log("false:",a==b);
+        console.log("true:",a!=b);
+        console.log("false:",a===b);//chack data type also
+        console.log("true:",a!==b);
+        //logical oprator
+        var x1="blacks";
+        var y1="white";
+            console.log("false",x1&&y1);
+            console.log("true",x1||y1);
+            console.log("true:",x1!=y1);
+            //if else condtion
+        var age=19;
+        if(age>18){
+            console.log("eligible for vote");
+        }
+        else if(age==18){
+            console.log("eligible");
+        }
+        else{
+            console.log("not elegible");
+        }
+        //ternary operator
+        var res=age>=18? "adult":"not adult";
+        console.log("ternary op: ",res);
+        //switch operator
+        var aa=24;
+        var bb=5;
+        var op='+';
+        switch(op){
+            case'+':
+            console.log("add: ",aa+bb);
+            break;
+            case'-':
+            console.log("sub: ",aa-bb);
+            break;
+            default:
+            console.log("invailid operator");
+        }
+            //takig input
+            var num=prompt("enter a number:");
+            if (num % 5 == 0){
+                console.log(num,"num is multiple of 5");
+            }
+            else {
+                console.log(num,"num is not multiple of 5")
+            }
+    </script>
+    
+</body>
+</html>
