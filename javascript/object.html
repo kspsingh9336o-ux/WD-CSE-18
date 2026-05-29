@@ -1,0 +1,58 @@
+!DOCTYPE html>
+<title lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta>js object</title>
+</head>
+<body>
+<script>
+    let myInfo={
+        name:"kapil patel",
+        age:20,
+        isMairid:false,
+        address:{
+            sreetNo:70,
+            pin:210588,
+            area:"patelsahab",
+            city:"jhansi",
+                  },
+        education:{       
+        cource:"B.Tech",
+        branch:"CSE",
+        year:2025,
+        },
+        education2:function(){
+            console.log("my education is: " + this.education.cource + " " + this.education.branch + " and " + this.education.year);
+        }
+    }
+        myInfo.education2();
+    console.log(myInfo.address.area);
+     console.log(myInfo["name"]);//acces using 
+      console.log(myInfo.address.pin);
+      //to find objct lenfth
+      let len=Object.keys(myInfo).length;
+      console.log("length of fun:"+len);
+      //delet obj.
+      console.log(delete myInfo.name);
+      console.log(myInfo);
+      //print object using for loop
+      for(let i=0;i<myInfo.len;i++){
+      console.log("obj. key are"+ myInfo[i]);
+      }
+      //print obj using for in loop
+    //   for(let x in myInfo){
+    //     console.log(myInfo[x]);
+    //   }
+      //create obj using new key word
+      let student = new Object();
+      student.name="kapil patel";
+      student.age=20;
+      student.cource="B.Tech";
+      student.banch="CSE";
+      student.isnotMairid=true;
+      console.log(student);
+
+</script>
+    
+</body>
+</html>
