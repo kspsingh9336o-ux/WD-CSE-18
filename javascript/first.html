@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //js vairiable data type
+        //pritive:immutabe single vailu and store in memory
+//strig
+var name="kapil patel"
+console.log("my name is "+name);
+console.log(typeof(name));
+//number 
+var num=9336031394;
+console.log("my mob. num is"+num);
+//bool
+var ismairid=true;
+console.log(name+"is mairid"+ismairid);
+console.log(typeof(ismairid));
+//undefined
+var rollno;
+console.log(typeof(rollno));
+//null
+var myemail=null;
+console.log(name+"my email is:"+myemail)
+console.log(typeof(myemail));
+//bigint
+var myvailu=34258762537;
+console.log(myvailu);
+var myvailu=BigInt(34258762537783549834);
+console.log(myvailu);
+console.log(typeof(myvailu));
+//SYMBOL
+var x="hello";
+var y="hello";
+console.log(x==y);
+//after add symbol
+var x=Symbol("hello");
+var y=Symbol("hello");
+console.log(x==y);
+console.log(typeof(x)+" and "+typeof(y));
+//non pritive data type:mutable and store in heap memory
+//object-vailu are defind in oops in ={}
+var studen={
+    name: "kapil patel",
+    age:19,
+    rollNo:20,
+    isPass:true,
+    email:"kspsingh9336@gmail.com",
+    addres:null,
+    branch:"cse",
+    section:18,
+}
+  console.log(studen.name);
+  console.log(studen.ispass);
+  console.log(studen.addres);
+  console.log(studen.branch);
+  console.log(typeof(studen.name));
+   console.log(typeof(studen));
+ console.log(typeof(studen.email));
+  var length=Object.keys(studen).length;
+  console.log(length);
+  //array is collection of any data type
+  let myDetail=["kapil",19,false,"kspsingh9336@gamil.com"];
+  console.log(myDetail[2]);
+//   var size=myDetail.length;
+  for( i=0;i<myDetail.length;i++){
+  console.log(myDetail[i]);
+  }
+  //funtion-block of code to-- perform particuler task
+  function myinfo(){
+    let aa=5;
+    let bb=7;
+    let sum=aa+bb;
+    console.log("sum of the fun. is :"+sum);
+    console.log("sum is:"+(aa+bb));
+
+  } 
+myinfo();
+
+    </script>
+    
+</body>
+</html>
